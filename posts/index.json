@@ -1,0 +1,23 @@
+[
+  {
+    "file": "2026-10-09-today-i-learned.md",
+    "title": "오늘 배운 것",
+    "date": "2026-10-09",
+    "tags": ["html", "css", "javascript", "회고"],
+    "summary": "Claude Code로 블로그를 만들며 정리한 HTML, CSS, JavaScript의 역할."
+  },
+  {
+    "file": "2026-10-09-markdown-guide.md",
+    "title": "마크다운 문법 한눈에 보기",
+    "date": "2026-10-09",
+    "tags": ["markdown", "가이드"],
+    "summary": "이 블로그가 지원하는 마크다운 문법을 한 글에 모았습니다."
+  },
+  {
+    "file": "2026-10-01-hello.md",
+    "title": "블로그를 시작합니다",
+    "date": "2026-10-01",
+    "tags": ["일상"],
+    "summary": "프레임워크 없이 만든 작은 블로그의 첫 글."
+  }
+]

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog</title>
+  <meta name="description" content="마크다운으로 쓰는 블로그">
+  <script>
+    // 첫 화면 깜빡임을 막기 위해 렌더링 전에 테마를 적용한다.
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="#/">My Blog</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="다크 모드 전환"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="app" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© My Blog</div>
+  </footer>
+
+  <noscript><div class="container notice">이 블로그는 JavaScript가 필요합니다.</div></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
